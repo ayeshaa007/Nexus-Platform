@@ -53,10 +53,10 @@ export const WalletCard = ({ wallet, onDeposit, onWithdraw, onTransfer }) => {
           </div>
         )}
 
-        <div className="flex gap-2 pt-1">
+       <div className="flex flex-wrap gap-2 pt-1">
           <Button
             size="sm"
-            className="flex-1 bg-white/20 hover:bg-white/30 text-white border-0"
+            className="min-w-[30%] flex-1 sm:flex-none bg-white/20 hover:bg-white/30 text-white border-0"
             leftIcon={<ArrowDownLeft size={14} />}
             onClick={onDeposit}
           >
@@ -64,7 +64,7 @@ export const WalletCard = ({ wallet, onDeposit, onWithdraw, onTransfer }) => {
           </Button>
           <Button
             size="sm"
-            className="flex-1 bg-white/20 hover:bg-white/30 text-white border-0"
+            className="min-w-[30%] flex-1 sm:flex-none bg-white/20 hover:bg-white/30 text-white border-0"
             leftIcon={<ArrowUpRight size={14} />}
             onClick={onWithdraw}
           >
@@ -72,7 +72,7 @@ export const WalletCard = ({ wallet, onDeposit, onWithdraw, onTransfer }) => {
           </Button>
           <Button
             size="sm"
-            className="flex-1 bg-white/20 hover:bg-white/30 text-white border-0"
+            className="min-w-[30%] flex-1 sm:flex-none bg-white/20 hover:bg-white/30 text-white border-0"
             leftIcon={<RefreshCw size={14} />}
             onClick={onTransfer}
           >
@@ -83,3 +83,6 @@ export const WalletCard = ({ wallet, onDeposit, onWithdraw, onTransfer }) => {
     </div>
   );
 };
+
+
+
